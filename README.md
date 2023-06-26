@@ -21,7 +21,7 @@ pip install -r requirements.txt
 
 ---
 
-Torchvision provides `CIFAR10`, `CIFAR100` datasets. The root paths of data are respectively set to `./dataset/cifar10` and `./dataset/cifar100`. 
+Torchvision provides `CIFAR10`, `CIFAR100` datasets. The root paths of data are respectively set to `./dataset/cifar10` and `./dataset/cifar100`. `ImageNet-1K` dataset is placed at `./dataset/ILSVRC`.
 
 ### Pre-training
 
@@ -36,7 +36,7 @@ To start the APS pre-training, simply run the following commands.
 - `data-root` is the path of the dataset.
 - `nepoch` is the pre-trained epochs.
 
-Run APS with `ViT-Small/2` network on a single node on `CIFAR10` for 1600 epochs with the following command.
+Run APS with `ViT-Small/2` network on a single node on `CIFAR100` for 1600 epochs with the following command.
 
 ```bash
 python main_pretrain.py --arch='vit-small' --dataset='cifar100' --data-root='./dataset/cifar100' --nepoch=1600
@@ -46,7 +46,7 @@ python main_pretrain.py --arch='vit-small' --dataset='cifar100' --data-root='./d
 
 ---
 
-To finetune `ViT-Small/2` on `CIFAR10`  with the following command.
+To finetune `ViT-Small/2` on `CIFAR100`  with the following command.
 
 ```bash
 python main_finetune.py --arch='vit-small' --dataset='cifar100' --data-root='./dataset/cifar100'  \
@@ -56,6 +56,7 @@ python main_finetune.py --arch='vit-small' --dataset='cifar100' --data-root='./d
 ### Trained Model Weights & Finetune Accuracy
 
 ---
++ **CIFAR10 and  CIFAR100**
 
 |      Dataset      | Training (#Epochs) |                                   ViT-Tiny/2                                   |                                   ViT-Small/2                                   |                                   ViT-Base/2                                   |
 | :----------------: | :----------------: | :-----------------------------------------------------------------------------: | :-----------------------------------------------------------------------------: | :-----------------------------------------------------------------------------: |
@@ -71,6 +72,16 @@ python main_finetune.py --arch='vit-small' --dataset='cifar100' --data-root='./d
 |                    |  Pretrain (3200)  | [download](https://mega.nz/folder/5adT0LZI#xRBUoFehvy8I91gYfNfyMQ/folder/Fa8nSYqD) | [download](https://mega.nz/folder/5adT0LZI#xRBUoFehvy8I91gYfNfyMQ/folder/Fa8nSYqD) | [download](https://mega.nz/folder/5adT0LZI#xRBUoFehvy8I91gYfNfyMQ/folder/Fa8nSYqD) |
 |                    |  Finetune  (100)  | [download](https://mega.nz/folder/5adT0LZI#xRBUoFehvy8I91gYfNfyMQ/folder/0SkXCAoY) | [download](https://mega.nz/folder/5adT0LZI#xRBUoFehvy8I91gYfNfyMQ/folder/0SkXCAoY) | [download](https://mega.nz/folder/5adT0LZI#xRBUoFehvy8I91gYfNfyMQ/folder/0SkXCAoY) |
 |                    | **Accuracy** |                                      83.4%                                      |                                      85.3%                                      |                                      86.0%                                      |
+
++ **ImageNet-1K**
+
+| Backbone |                    Pretrain (300 epochs)                     |                    Finetune (100 epochs)                     |
+| :------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
+| ViT-S/16 | [download](https://mega.nz/folder/5adT0LZI#xRBUoFehvy8I91gYfNfyMQ/folder/sP8HgIDL) | 82.1% ([download](https://mega.nz/folder/5adT0LZI#xRBUoFehvy8I91gYfNfyMQ/folder/sCsxDKpQ)) |
+| ViT-B/16 | [download](https://mega.nz/folder/5adT0LZI#xRBUoFehvy8I91gYfNfyMQ/folder/sP8HgIDL) | 84.2% ([download](https://mega.nz/folder/5adT0LZI#xRBUoFehvy8I91gYfNfyMQ/folder/sCsxDKpQ)) |
+
+
+
 
 ### LICENSE
 
