@@ -93,7 +93,7 @@ This project is under the CC-BY-NC 4.0 license. See [LICENSE](LICENSE) for detai
 
 If you use this code for your research, please cite our papers.
 
-```
+```bibtex
 @article{shen2023asymmetric,
       title={Asymmetric Patch Sampling for Contrastive Learning}, 
       author={Shen, Chengchao and Chen, Jianzhong and Wang, Shu and Kuang, Hulin and Liu, Jin and Wang, Jianxin},
