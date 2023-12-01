@@ -8,6 +8,11 @@ APS is a novel asymmetric patch sampling strategy for contrastive learning, to f
 
   [[Paper](https://arxiv.org/abs/2306.02854)]    [[BibTex](#Citation)]
 
+  <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com/visresearch/aps&count_bg=%23126DE4&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/>
+
+            
+
+
 ### Requirements
 
 ---
