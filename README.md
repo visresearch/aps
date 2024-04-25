@@ -6,7 +6,7 @@ PyTorch implementation and pre-trained models for paper APS: **Asymmetric Patch 
 
 APS is a novel asymmetric patch sampling strategy for contrastive learning, to further boost the appearance asymmetry for better representations. APS significantly outperforms the existing self-supervised methods on both ImageNet-1K and CIFAR dataset, e.g., 2.5% finetune accuracy improvement on CIFAR100. Additionally, compared to other self-supervised methods, APS is more efficient on both memory and computation during training.
 
-  [[Paper](https://arxiv.org/abs/2306.02854)]    [[BibTex](#Citation)]
+
 
   <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com/visresearch/aps&count_bg=%23126DE4&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/>
 
@@ -94,15 +94,4 @@ python main_finetune.py --arch='vit-small' --dataset='cifar100' --data-root='./d
 
 This project is under the CC-BY-NC 4.0 license. See [LICENSE](LICENSE) for details.
 
-### Citation
 
-If you use this code for your research, please cite our papers.
-
-```bibtex
-@article{shen2023asymmetric,
-      title={Asymmetric Patch Sampling for Contrastive Learning}, 
-      author={Shen, Chengchao and Chen, Jianzhong and Wang, Shu and Kuang, Hulin and Liu, Jin and Wang, Jianxin},
-      journal={arXiv preprint arXiv:2306.02854},
-      year={2023}
-}
-```
