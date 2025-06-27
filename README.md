@@ -6,11 +6,11 @@ PyTorch implementation and pre-trained models for paper APS: **Asymmetric Patch 
 
 APS is a novel asymmetric patch sampling strategy for contrastive learning, to further boost the appearance asymmetry for better representations. APS significantly outperforms the existing self-supervised methods on both ImageNet-1K and CIFAR dataset, e.g., 2.5% finetune accuracy improvement on CIFAR100. Additionally, compared to other self-supervised methods, APS is more efficient on both memory and computation during training.
 
-[[Paper](https://www.sciencedirect.com/science/article/pii/S0031320324007635)]    [[Arxiv](https://arxiv.org/abs/2306.02854)]    [[BibTex](#Citation)] 
+[[Paper](https://www.sciencedirect.com/science/article/pii/S0031320324007635)]    [[Arxiv](https://arxiv.org/abs/2306.02854)]    [[BibTex](#Citation)]   [[Model](https://huggingface.co/visresearch/aps/tree/main)]  
 
 <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com/visresearch/aps&count_bg=%23126DE4&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/>
 
-            
+​            
 
 
 ### Requirements
@@ -58,34 +58,17 @@ python main_finetune.py --arch='vit-small' --dataset='cifar100' --data-root='./d
                    --pretrained-weights='./weight/pretrain/cifar100/small_1600ep_5e-4_100.pth'
 ```
 
-### Trained Model Weights & Finetune Accuracy
+### Main Results
 
 ---
 + **CIFAR10 and  CIFAR100**
 
 |      Dataset      | Training (#Epochs) |                                   ViT-Tiny/2                                   |                                   ViT-Small/2                                   |                                   ViT-Base/2                                   |
 | :----------------: | :----------------: | :-----------------------------------------------------------------------------: | :-----------------------------------------------------------------------------: | :-----------------------------------------------------------------------------: |
-| **CIFAR10** |  Pretrain (1600)  | [download](https://mega.nz/folder/5adT0LZI#xRBUoFehvy8I91gYfNfyMQ/folder/9T1jnaIC) | [download](https://mega.nz/folder/5adT0LZI#xRBUoFehvy8I91gYfNfyMQ/folder/9T1jnaIC) | [download](https://mega.nz/folder/5adT0LZI#xRBUoFehvy8I91gYfNfyMQ/folder/9T1jnaIC) |
-|                    |   Finetune (100)   | [download](https://mega.nz/folder/5adT0LZI#xRBUoFehvy8I91gYfNfyMQ/folder/VT0zUI7Z) | [download](https://mega.nz/folder/5adT0LZI#xRBUoFehvy8I91gYfNfyMQ/folder/VT0zUI7Z) | [download](https://mega.nz/folder/5adT0LZI#xRBUoFehvy8I91gYfNfyMQ/folder/VT0zUI7Z) |
-|                    | **Accuracy** |                                      97.2%                                      |                                      98.1%                                      |                                      98.2%                                      |
-|                    |  Pretrain (3200)  | [download](https://mega.nz/folder/5adT0LZI#xRBUoFehvy8I91gYfNfyMQ/folder/9T1jnaIC) | [download](https://mega.nz/folder/5adT0LZI#xRBUoFehvy8I91gYfNfyMQ/folder/9T1jnaIC) | [download](https://mega.nz/folder/5adT0LZI#xRBUoFehvy8I91gYfNfyMQ/folder/9T1jnaIC) |
-|                    |  Finetune  (100)  | [download](https://mega.nz/folder/5adT0LZI#xRBUoFehvy8I91gYfNfyMQ/folder/oH8XDCrb) | [download](https://mega.nz/folder/5adT0LZI#xRBUoFehvy8I91gYfNfyMQ/folder/oH8XDCrb) | [download](https://mega.nz/folder/5adT0LZI#xRBUoFehvy8I91gYfNfyMQ/folder/oH8XDCrb) |
-|                    | **Accuracy** |                                      97.5%                                      |                                      98.2%                                      |                                      98.3%                                      |
-| **CIFAR100** |  Pretrain (1600)  | [download](https://mega.nz/folder/5adT0LZI#xRBUoFehvy8I91gYfNfyMQ/folder/Fa8nSYqD) | [download](https://mega.nz/folder/5adT0LZI#xRBUoFehvy8I91gYfNfyMQ/folder/Fa8nSYqD) | [download](https://mega.nz/folder/5adT0LZI#xRBUoFehvy8I91gYfNfyMQ/folder/Fa8nSYqD) |
-|                    |  Finetune  (100)  | [download](https://mega.nz/folder/5adT0LZI#xRBUoFehvy8I91gYfNfyMQ/folder/dK0T2QrS) | [download](https://mega.nz/folder/5adT0LZI#xRBUoFehvy8I91gYfNfyMQ/folder/dK0T2QrS) | [download](https://mega.nz/folder/5adT0LZI#xRBUoFehvy8I91gYfNfyMQ/folder/dK0T2QrS) |
-|                    | **Accuracy** |                                      83.4%                                      |                                      84.9%                                      |                                      85.9%                                      |
-|                    |  Pretrain (3200)  | [download](https://mega.nz/folder/5adT0LZI#xRBUoFehvy8I91gYfNfyMQ/folder/Fa8nSYqD) | [download](https://mega.nz/folder/5adT0LZI#xRBUoFehvy8I91gYfNfyMQ/folder/Fa8nSYqD) | [download](https://mega.nz/folder/5adT0LZI#xRBUoFehvy8I91gYfNfyMQ/folder/Fa8nSYqD) |
-|                    |  Finetune  (100)  | [download](https://mega.nz/folder/5adT0LZI#xRBUoFehvy8I91gYfNfyMQ/folder/0SkXCAoY) | [download](https://mega.nz/folder/5adT0LZI#xRBUoFehvy8I91gYfNfyMQ/folder/0SkXCAoY) | [download](https://mega.nz/folder/5adT0LZI#xRBUoFehvy8I91gYfNfyMQ/folder/0SkXCAoY) |
-|                    | **Accuracy** |                                      83.4%                                      |                                      85.3%                                      |                                      86.0%                                      |
-
-+ **ImageNet-1K**
-
-| Backbone |                    Pretrain (300 epochs)                     |                    Finetune (100 epochs)                     |
-| :------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| ViT-S/16 | [download](https://mega.nz/folder/5adT0LZI#xRBUoFehvy8I91gYfNfyMQ/folder/sP8HgIDL) | 82.1% ([download](https://mega.nz/folder/5adT0LZI#xRBUoFehvy8I91gYfNfyMQ/folder/sCsxDKpQ)) |
-| ViT-B/16 | [download](https://mega.nz/folder/5adT0LZI#xRBUoFehvy8I91gYfNfyMQ/folder/sP8HgIDL) | 84.2% ([download](https://mega.nz/folder/5adT0LZI#xRBUoFehvy8I91gYfNfyMQ/folder/sCsxDKpQ)) |
-
-
+| **CIFAR10** | **Accuracy **(1600) |                                      97.2%                                      |                                      98.1%                                      |                                      98.2%                                      |
+|                    | **Accuracy **(3200) |                                      97.5%                                      |                                      98.2%                                      |                                      98.3%                                      |
+| **CIFAR100** | **Accuracy** (1600) |                                      83.4%                                      |                                      84.9%                                      |                                      85.9%                                      |
+|                    | **Accuracy** (3200) |                                      83.4%                                      |                                      85.3%                                      |                                      86.0%                                      |
 
 
 ### LICENSE
